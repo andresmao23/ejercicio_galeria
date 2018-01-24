@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>LUGAR DENTRO DE LA GALERÍA</h1>
+        <h2>{{ object.nombre_local }}</h2>
+        <h4>{{ object.nombre_propietario }}</h4>
+        <h4>Número del establecimiento: {{ object.id }}</h4>
+        <h4>Tipo de establecimiento: {{ object.typo }}</h4>
+    </div>
+{% endblock %}

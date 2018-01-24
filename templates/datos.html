@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>DATOS</h1>
+
+        {% for object in object_list %}
+            <a href="{% url 'detalle' object.id %}"><li>{{ object.nombre_local }} - {{ object.nombre_propietario }}</li></a>
+        {% endfor %}
+    </div>
+{% endblock %}
